@@ -469,12 +469,18 @@ html {
      align-items: center;
 }
 
-.galery__main div img{
+.galery__main div img {
     width: 40%;
     height: 40vh;
     margin: 5px;
     min-width: 302px;
     object-fit: cover;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.galery__main div img:hover {
+    filter: none;
 }
 
 /* ---------------------------------------------------------------------------------- */
