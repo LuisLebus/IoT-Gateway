@@ -52,6 +52,9 @@ html {
 .header a {
     margin: 1rem;
     height: 80%;
+
+    animation: bounceInLeft;
+    animation-duration: 1s;
 }
 
 .header a img {
@@ -195,6 +198,8 @@ html {
 
 .index__banner a:hover {
     color: black;
+    animation: heartBeat;
+    animation-duration: 2s;
 }
 
 /* ------------   prod_name   ----------- */
@@ -383,6 +388,11 @@ html {
 .about_dyt__features div h3 {
     font-size: 3rem;
     text-align: center;
+}
+
+.about_dyt__features div:hover {
+    animation: shakeX;
+    animation-duration: 2s;   
 }
 
 /* ------------   more_info   ----------- */
