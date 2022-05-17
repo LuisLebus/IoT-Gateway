@@ -42,6 +42,11 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     margin: 1rem;
+    transition: all 0.5s;
+}
+
+.header__nav a:hover {
+    color: white;
 }
 
 .header a {
@@ -95,6 +100,12 @@ html {
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 1.5rem;
+
+    transition: all 0.5s;
+}
+
+.footer__contact a:hover {
+    color: black;
 }
 
 .footer__subscribe h3{
@@ -178,6 +189,12 @@ html {
     border-radius: 1.5rem;
 
     margin-bottom: 3rem;
+
+    transition: all 0.5s;
+}
+
+.index__banner a:hover {
+    color: black;
 }
 
 /* ------------   prod_name   ----------- */
@@ -281,6 +298,13 @@ html {
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 1.5rem;
+
+    transition: all 0.5s;
+}
+
+.index__more_info a:hover {
+    color: black;
+    border: solid 0.2rem black;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -394,6 +418,11 @@ html {
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 1.5rem;
+    transition: all 0.5s;
+}
+
+.about_dyt__more_info a:hover {
+    color: black;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -724,7 +753,7 @@ html {
     }
 
     .header__nav_mobile ul li:hover > ul {
-        display: block;
+        display :block;
         border: solid 0.2rem black;
     }
 
@@ -739,6 +768,10 @@ html {
         text-decoration: none;
         text-transform: uppercase;
         transition: all 0.5s;
+    }
+
+    .header__nav_mobile ul li ul a:hover {
+        color: white;
     }
 
 /* ---------------------------------------------------------------------------------- */
