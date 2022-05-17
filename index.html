@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>D&T</title>
+</head>
+
+<body>
+    <div class="index__grid">
+        <header class="header">
+            <a href="./index.html"><img src="./assets/images/logo.png" alt="Logo"></a>
+            <nav class="header__nav">
+                <a href="./index.html">Inicio</a>
+                <a href="./pages/product_description.html">Descripción</a>
+                <a href="./pages/galery.html">Galería</a>
+                <a href="./pages/about_dyt.html">Compañia</a>
+                <a href="./pages/contact_dyt.html">Contacto</a>
+            </nav>
+
+            <nav class="header__nav_mobile">
+                <ul>
+                    <li>
+                        <a href=""><i class="bi bi-list"></i></a>
+                        <ul>
+                            <a href="./index.html">Inicio</a>
+                            <a href="./pages/product_description.html">Descripción</a>
+                            <a href="./pages/galery.html">Galería</a>
+                            <a href="./pages/about_dyt.html">Compañia</a>
+                            <a href="./pages/contact_dyt.html">Contacto</a>
+                        </ul>
+                    </li>
+                </ul>    
+            </nav>
+        </header>
+
+        <main class="index__banner">
+            <h1>IoT PARA INDUSTRIAS</h1>
+            <a href="#prod_name">VER PRODUCTO</a>
+        </main>
+
+        <section class="index__prod_name" id="prod_name">
+            <h2>IoT Gateway</h2>
+            <p>Con IoT Gateway usted podrá monitorear y gestionar, con precisión y en tiempo real, toda la información relacionada a los procesos que se llevan adelante en su industria.</p>
+        </section>
+            
+        <section class="index__prod_features">
+            <div>
+                <h3>TIEMPO REAL</h3>
+                <img src="./assets/images/real_time.png" alt="Tiempo Real">
+                <p>Observe en tiempo real todos los parámetros y el estado de su tablero eléctrico y de los procesos de su industria.</p>
+            </div>
+            <div>
+                <h3>DATOS HISTORICOS</h3>
+                <img src="./assets/images/historical_data.png" alt="Datos Históricos">
+                <p>Obtenga la evolución histórica de los parámetros de su industria y eventos ocurridos.
+                </div>
+            <div>
+                <h3>ALARMAS</h3>
+                <img src="./assets/images/alarms.png" alt="Alarmas">
+                <p>Reciba alarmas en su teléfono cuando algún parametro se encuentre fuera del rango configurado.</p>
+            </div>
+        </section>
+
+        <section class="index__more_info">
+            <a href="./pages/product_description.html">MAS INFORMACION</a>
+        </section>
+    
+        <footer class="footer">
+            <div class="footer__contact">
+                <h3>Comunicate con nosotros!</h3>
+                <a href="./pages/contact_dyt.html">CONTACTO</a>    
+            </div>
+            <div class="footer__subscribe">
+                <h3>Subscribite a nuestro newsletter!</h3>
+                <form action="subscribir.php" method="get" enctype="multipart/form-data">
+                   <input type="email" placeholder="nombre@mail.com">
+                   <input type="submit" value="SUBSCRIBIR">
+                </form>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

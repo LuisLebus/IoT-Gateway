@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>D&T</title>
+</head>
+
+<body>
+    <div class="contact_dyt__grid">
+        <header class="header">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
+            <nav class="header__nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/product_description.html">Descripción</a>
+                <a href="../pages/galery.html">Galería</a>
+                <a href="../pages/about_dyt.html">Compañia</a>
+                <a href="../pages/contact_dyt.html">Contacto</a>
+            </nav>
+
+            <nav class="header__nav_mobile">
+                <ul>
+                    <li>
+                        <a href=""><i class="bi bi-list"></i></a>
+                        <ul>
+                            <a href="../index.html">Inicio</a>
+                            <a href="../pages/product_description.html">Descripción</a>
+                            <a href="../pages/galery.html">Galería</a>
+                            <a href="../pages/about_dyt.html">Compañia</a>
+                            <a href="../pages/contact_dyt.html">Contacto</a>
+                        </ul>
+                    </li>
+                </ul>    
+            </nav>
+        </header>
+
+        <main class="contact_dyt__main">
+            <div class="contact_dyt__main_form">
+                <h2>Contacto</h2>
+                <form action="contact.php" method="get" enctype="multipart/form-data">
+                    <div>
+                        <label for="">Nombre</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">E-mail</label>
+                    <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Mensaje</label>
+                        <input type="text" class="contact_dyt__main_form__msg">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="contact_dyt__main_loc">
+                <h2>Ubicación</h2>
+                <div>
+                    <p>
+                        Incubadora AGENPIA <br>
+                        Parque Industrial Avellaneda <br>
+                        Ciudad de Avellaneda - Santa Fe <br>
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002.7287701500687!2d-59.63738359467942!3d-29.126153718196907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x387fac8215a4daae!2sAGENPIA!5e0!3m2!1sen!2sar!4v1650418725357!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__contact">
+                <h3>Comunicate con nosotros!</h3>
+                <a href="../pages/contact_dyt.html">CONTACTO</a>    
+            </div>
+            <div class="footer__subscribe">
+                <h3>Subscribite a nuestro newsletter!</h3>
+                <form action="subscribir.php" method="get" enctype="multipart/form-data">
+                <input type="email" placeholder="nombre@mail.com">
+                <input type="submit" value="SUBSCRIBIR">
+                </form>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
