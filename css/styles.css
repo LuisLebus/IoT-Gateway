@@ -146,7 +146,7 @@ html {
 .index__banner  {
     grid-area: banner;
 
-    background-image: url("../assets/images/banner.jpeg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.933), rgba(5, 5, 5, 0.027)), url("../assets/images/banner.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
