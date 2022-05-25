@@ -6,92 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>D&T</title>
 </head>
 
 <body>
-    <div class="contact_dyt__grid">
-        <header class="header">
-            <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
-            <nav class="header__nav">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/product_description.html">Descripción</a>
-                <a href="../pages/galery.html">Galería</a>
-                <a href="../pages/about_dyt.html">Compañia</a>
-                <a href="../pages/contact_dyt.html">Contacto</a>
-            </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid d-flex align-items-center">
+                <a class="navbar-brand me-auto" href="../index.html">
+                    <img src="../assets/images/logo.png" alt="Logo" width="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <div class="navbar-nav text-uppercase fw-semibold fs-5">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../pages/product_description.html">Descripción</a>
+                        <a class="nav-link" href="../pages/galery.html">Galería</a>
+                        <a class="nav-link" href="../pages/about_dyt.html">Compañia</a>
+                        <a class="nav-link active" aria-current="page" href="../pages/contact_dyt.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <nav class="header__nav_mobile">
-                <ul>
-                    <li>
-                        <a href=""><i class="bi bi-list"></i></a>
-                        <ul>
-                            <a href="../index.html">Inicio</a>
-                            <a href="../pages/product_description.html">Descripción</a>
-                            <a href="../pages/galery.html">Galería</a>
-                            <a href="../pages/about_dyt.html">Compañia</a>
-                            <a href="../pages/contact_dyt.html">Contacto</a>
-                        </ul>
-                    </li>
-                </ul>    
-            </nav>
-        </header>
-
-        <main class="contact_dyt__main">
-            <div class="contact_dyt__main_form">
-                <h2>Contacto</h2>
-                <form action="contact.php" method="get" enctype="multipart/form-data">
-                    <div>
-                        <label for="">Nombre</label>
-                        <input type="text">
+    <main class="container-fluid border-top border-2 border-dark">
+        <div class="row justify-content-center">
+            <div class="col-8 ">
+                <h2 class="m-4 fs-1 text-dark text-center">Contacto</h2>
+                <form>
+                    <div class="form-group mt-4 mb-4">
+                        <label class="mb-1" for="form_name">Nombre</label>
+                        <input type="text" class="form-control" id="form_name" placeholder="Ingrese su nombre">
                     </div>
-                    <div>
-                        <label for="">E-mail</label>
-                    <input type="email">
+                    <div class="form-group mt-4 mb-4">
+                      <label class="mb-1" for="form_email">Email</label>
+                      <input type="email" class="form-control" id="form_email" aria-describedby="emailHelp" placeholder="Ingrese su email">
                     </div>
-                    <div>
-                        <label for="">Mensaje</label>
-                        <input type="text" class="contact_dyt__main_form__msg">
+                    <div class="form-group mt-4 mb-4">
+                        <label class="mb-1" for="form_message">Mensaje</label>
+                        <textarea class="form-control" id="form_message" placeholder="Ingrese su mensaje" rows="3"></textarea>
                     </div>
-                    <div>
-                        <input type="submit" value="Enviar">
+                    <div class="mx-auto text-center mt-4 mb-4">
+                        <button type="submit" id="button" name="button" class="btn btn-primary btn-lg fs-6 ps-4 pe-4">Enviar</button>
                     </div>
                 </form>
             </div>
-            <div class="contact_dyt__main_loc">
-                <h2>Ubicación</h2>
-                <div>
-                    <p>
-                        Incubadora AGENPIA <br>
-                        Parque Industrial Avellaneda <br>
-                        Ciudad de Avellaneda - Santa Fe <br>
-                    </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002.7287701500687!2d-59.63738359467942!3d-29.126153718196907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x387fac8215a4daae!2sAGENPIA!5e0!3m2!1sen!2sar!4v1650418725357!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="container-fluid p-4 bg-primary bg-opacity-75">
-            <div class="row justify-content-center">
-                <div class="col-10 col-lg-6 text-center">
-                    <h3 class="fs-4 m-4 m-lg-3">Comunicate con nosotros!</h3>
-                    <a class="btn btn-primary btn-lg fs-6 ps-4 pe-4 border border-2 border-dark" href="../pages/contact_dyt.html">CONTACTO</a>                </div>
-                <div class="col-10 col-lg-6 text-center">
-                    <h3 class="fs-4 m-4 m-lg-3">Subscribite a nuestro newsletter!</h3>
-                    <div class="row g-3 justify-content-center align-items-center">
-                        <div class="col-auto">
-                            <input type="email" class="form-control" placeholder="email@email.com">
-                        </div>
-                        <div class="col-auto">
-                            <input type="submit" class="btn btn-primary" value="SUBSCRIBIR">
-                        </div>
+    <section class="container-fluid pt-3 pb-3 border-bottom border-2 border-dark">  
+        <div class="row justify-content-center p-2">
+            <div class="col-8 ">
+                <h2 class="m-4 fs-1 text-dark text-center">Ubicación</h2>
+            </div>
+            <div class="col-8 col-lg-6 p-4 d-flex flex-column justify-content-center align-items-center">
+                <p class="text-center lh-lg fs-3">
+                    Incubadora AGENPIA <br>
+                    Parque Industrial Avellaneda <br>
+                    Ciudad de Avellaneda <br>
+                    Santa Fe
+                </p>
+            </div>
+            <div class="col-8 col-lg-6 p-4 contact_dyt__div_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002.7287701500687!2d-59.63738359467942!3d-29.126153718196907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x387fac8215a4daae!2sAGENPIA!5e0!3m2!1sen!2sar!4v1650418725357!5m2!1sen!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 h-100"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid p-4 bg-primary bg-opacity-75">
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-6 text-center">
+                <h3 class="fs-4 m-4 m-lg-3">Comunicate con nosotros!</h3>
+                <a class="btn btn-primary btn-lg fs-6 ps-4 pe-4 border border-2 border-dark" href="./pages/contact_dyt.html">CONTACTO</a>
+            </div>
+            <div class="col-10 col-lg-6 text-center">
+                <h3 class="fs-4 m-4 m-lg-3">Subscribite a nuestro newsletter!</h3>
+                <div class="row g-3 justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <input type="email" class="form-control" placeholder="email@email.com">
+                    </div>
+                    <div class="col-auto">
+                        <input type="submit" class="btn btn-primary" value="SUBSCRIBIR">
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
