@@ -2,61 +2,82 @@
 /* -----------------------------------   HEADER   ----------------------------------- */
 /* ---------------------------------------------------------------------------------- */
 .header-color {
-  background-color: #085feb; }
+  background-color: #085feb;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* -----------------------------------   FOOTER   ----------------------------------- */
 /* ---------------------------------------------------------------------------------- */
 .footer-color {
-  background-color: #4d8bcd; }
+  background-color: #4d8bcd;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* -----------------------------------   GLOBAL   ----------------------------------- */
 /* ---------------------------------------------------------------------------------- */
 .bg-lightblue-color {
-  background-color: #4d8bcd; }
+  background-color: #4d8bcd;
+}
 
 .bg-gray-color {
-  background-color: #7b7a7b; }
+  background-color: #7b7a7b;
+}
 
 .bg-lightgray-color, .prod_desc__card:hover {
-  background-color: #b8b1b8; }
+  background-color: #b8b1b8;
+}
 
 .bg-darkgray-color, .prod_desc__card {
-  background-color: #595759; }
+  background-color: #595759;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* ---------------------------------   index.html   --------------------------------- */
 /* ---------------------------------------------------------------------------------- */
 .index__bg_image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.933)), to(rgba(5, 5, 5, 0.027))), url("../assets/images/banner.jpeg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.933), rgba(5, 5, 5, 0.027)), url("../assets/images/banner.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 85vh; }
+  height: 85vh;
+}
 
 .card-img-top {
   width: 30%;
-  height: 100%; }
+  height: 100%;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------   product_description.html   -------------------------- */
 /* ---------------------------------------------------------------------------------- */
 .prod_desc__card {
-  transition: 0.5s; }
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------------   galery.html   --------------------------------- */
 /* ---------------------------------------------------------------------------------- */
 .galery__img {
-  filter: grayscale(1);
-  transition: 0.5s; }
-  .galery__img:hover {
-    filter: none; }
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.galery__img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* -------------------------------   about_dyt.html   ------------------------------- */
 /* ---------------------------------------------------------------------------------- */
 .about_dyt__img:hover {
-  animation: shakeX;
-  animation-duration: 2s; }
+  -webkit-animation: shakeX;
+          animation: shakeX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+/*# sourceMappingURL=styles.css.map */
