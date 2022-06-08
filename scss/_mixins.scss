@@ -1,0 +1,6 @@
+@mixin btn-param($margin, $padding, $font-size) {
+    margin: $margin;
+    padding-left: $padding;
+    padding-right: $padding;
+    font-size: $font-size;
+}

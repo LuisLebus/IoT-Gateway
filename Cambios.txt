@@ -1,0 +1,5 @@
+Para desafío 7:
+
+Se agregó la descripción, keywords y título de cada página.
+Se implementó un map para agrupar los colores. Antes se utilizaban variables individuales.
+Se implementó un mixin para dar unos estilos a los botones en el index.html, footer y en el about_dyt.html. Ver clases index__button, footer__button y about_dyt__button.

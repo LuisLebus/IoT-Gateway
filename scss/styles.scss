@@ -1,12 +1,12 @@
 @import "colors";
-
+@import "mixins";
 
 /* ---------------------------------------------------------------------------------- */
 /* -----------------------------------   HEADER   ----------------------------------- */
 /* ---------------------------------------------------------------------------------- */
  
 .header-color {
-    background-color: $color-header;
+    background-color: map-get($color, header);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -14,7 +14,11 @@
 /* ---------------------------------------------------------------------------------- */
 
 .footer-color {
-    background-color: $color-footer;
+    background-color: map-get($color, footer);
+}
+
+.footer__button {
+    @include btn-param(0rem, 2.5rem, 1rem);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -22,19 +26,19 @@
 /* ---------------------------------------------------------------------------------- */
 
 .bg-lightblue-color {
-    background-color: $color-bg-lightblue;
+    background-color: map-get($color, bg-lightblue);
 }
 
 .bg-gray-color {
-    background-color: $color-bg-gray;
+    background-color: map-get($color, bg-gray);
 }
 
 .bg-lightgray-color {
-    background-color: $color-bg-lightgray;
+    background-color: map-get($color, bg-lightgray);
 }
 
 .bg-darkgray-color {
-    background-color: $color-bg-darkgray;
+    background-color: map-get($color, bg-darkgray);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -52,6 +56,10 @@
 .card-img-top {
     width: 30%;
     height: 100%;
+}
+
+.index__button {
+    @include btn-param(1.3rem, 2.5rem, 1.5rem);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -87,4 +95,8 @@
 .about_dyt__img:hover {
     animation: shakeX;
     animation-duration: 2s; 
+}
+
+.about_dyt__button {
+    @include btn-param(1rem, 2rem, 1.5rem);
 }

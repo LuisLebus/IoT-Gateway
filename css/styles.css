@@ -12,6 +12,13 @@
   background-color: #4d8bcd;
 }
 
+.footer__button {
+  margin: 0rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1rem;
+}
+
 /* ---------------------------------------------------------------------------------- */
 /* -----------------------------------   GLOBAL   ----------------------------------- */
 /* ---------------------------------------------------------------------------------- */
@@ -24,7 +31,7 @@
 }
 
 .bg-lightgray-color, .prod_desc__card:hover {
-  background-color: #b8b1b8;
+  background-color: #d2d2d2;
 }
 
 .bg-darkgray-color, .prod_desc__card {
@@ -46,6 +53,13 @@
 .card-img-top {
   width: 30%;
   height: 100%;
+}
+
+.index__button {
+  margin: 1.3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.5rem;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -79,5 +93,12 @@
           animation: shakeX;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+}
+
+.about_dyt__button {
+  margin: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
