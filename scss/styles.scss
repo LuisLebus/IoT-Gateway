@@ -62,6 +62,10 @@
     @include btn-param(1.3rem, 2.5rem, 1.5rem);
 }
 
+.index__card-shadow {
+    box-shadow: 0 0 15px 10px;
+}
+
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------   product_description.html   -------------------------- */
 /* ---------------------------------------------------------------------------------- */
@@ -69,6 +73,8 @@
 .prod_desc__card {
     @extend .bg-darkgray-color;
     transition: 0.5s;
+
+    box-shadow: 0 0 30px 5px;
 
     &:hover {
         @extend .bg-lightgray-color;
